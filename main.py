@@ -86,6 +86,6 @@ async def analyze_audio(file: UploadFile = File(...)):
         raise HTTPException(500, f"Processing error: {str(e)}") from e
 
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
