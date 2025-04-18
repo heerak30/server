@@ -53,6 +53,12 @@ def generate_report(features, anomalies, return_json=False):
         }
     }
 
+
+@app.get("/")
+def read_root():
+    return {"message": "Hello from FastAPI!"}
+
+
 @app.post("/analyze/")
 async def analyze_audio(file: UploadFile = File(...)):
     try:
