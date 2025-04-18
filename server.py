@@ -74,6 +74,9 @@ async def analyze_audio(file: UploadFile = File(...)):
         # Generate JSON report
         report_data = generate_report([features], anomalies, return_json=True)
         
+        print("Printing Report")
+        print(report_data)
+        
         return JSONResponse({
             "processing_chain": "preprocess → extract → analyze → report",
             "results": report_data
@@ -83,6 +86,6 @@ async def analyze_audio(file: UploadFile = File(...)):
         raise HTTPException(500, f"Processing error: {str(e)}") from e
 
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
