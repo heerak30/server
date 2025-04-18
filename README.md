@@ -20,3 +20,9 @@ Hosted URL : http://ec2-13-232-222-184.ap-south-1.compute.amazonaws.com/
 WE shall use the route : http://ec2-13-232-222-184.ap-south-1.compute.amazonaws.com/analyze/ with a post request and an audio file in the body, screenshot attached:
 ![image](https://github.com/user-attachments/assets/5373b6a2-d13e-49b1-8848-481022845441)
 
+
+I also tested it using the Inbuilt swagger functionality of the Fastapi:
+![ss](https://github.com/user-attachments/assets/d40ad304-d5c0-494a-b5dc-1f4ceb81c3b7)
+
+
+
